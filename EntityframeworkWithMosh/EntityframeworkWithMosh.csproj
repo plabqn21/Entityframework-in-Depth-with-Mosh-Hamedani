@@ -51,12 +51,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationDbContex.cs" />
+    <Compile Include="Author.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="CourseLevel.cs" />
+    <Compile Include="Migrations\201709011416597_AddCourseAuthorTagTable.cs" />
+    <Compile Include="Migrations\201709011416597_AddCourseAuthorTagTable.Designer.cs">
+      <DependentUpon>201709011416597_AddCourseAuthorTagTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011439101_AddCategoriesTable.cs" />
+    <Compile Include="Migrations\201709011439101_AddCategoriesTable.Designer.cs">
+      <DependentUpon>201709011439101_AddCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011440513_PopulateCategoriesTable.cs" />
+    <Compile Include="Migrations\201709011440513_PopulateCategoriesTable.Designer.cs">
+      <DependentUpon>201709011440513_PopulateCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709011444042_AddCategoryColumnToCoursesTable.cs" />
+    <Compile Include="Migrations\201709011444042_AddCategoryColumnToCoursesTable.Designer.cs">
+      <DependentUpon>201709011444042_AddCategoryColumnToCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709020502553_AddDatePublishesToCoursesTable.cs" />
+    <Compile Include="Migrations\201709020502553_AddDatePublishesToCoursesTable.Designer.cs">
+      <DependentUpon>201709020502553_AddDatePublishesToCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709020508327_RenameTitleToNameInCourseTable.cs" />
+    <Compile Include="Migrations\201709020508327_RenameTitleToNameInCourseTable.Designer.cs">
+      <DependentUpon>201709020508327_RenameTitleToNameInCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709020512531_DeleteDatePublishedColumnFromCourseTable.cs" />
+    <Compile Include="Migrations\201709020512531_DeleteDatePublishedColumnFromCourseTable.Designer.cs">
+      <DependentUpon>201709020512531_DeleteDatePublishedColumnFromCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709011416597_AddCourseAuthorTagTable.resx">
+      <DependentUpon>201709011416597_AddCourseAuthorTagTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011439101_AddCategoriesTable.resx">
+      <DependentUpon>201709011439101_AddCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011440513_PopulateCategoriesTable.resx">
+      <DependentUpon>201709011440513_PopulateCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709011444042_AddCategoryColumnToCoursesTable.resx">
+      <DependentUpon>201709011444042_AddCategoryColumnToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709020502553_AddDatePublishesToCoursesTable.resx">
+      <DependentUpon>201709020502553_AddDatePublishesToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709020508327_RenameTitleToNameInCourseTable.resx">
+      <DependentUpon>201709020508327_RenameTitleToNameInCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709020512531_DeleteDatePublishedColumnFromCourseTable.resx">
+      <DependentUpon>201709020512531_DeleteDatePublishedColumnFromCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
